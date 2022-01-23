@@ -1,0 +1,37 @@
+[
+  {
+    "codigo" : 1,
+    "nombre" : "Platano",
+    "precio" : 0.75,
+    "unidades" : 10,
+    "caducidad" : "25/01/2022"
+  },
+  {
+    "codigo" : 2,
+    "nombre" : "Filete de pollo",
+    "precio" : 4.95,
+    "unidades" : 6,
+    "caducidad" : "23/01/2022"
+  },
+  {
+    "codigo" : 3,
+    "nombre" : "Carne picada",
+    "precio" : 3.95,
+    "unidades" : 2,
+    "caducidad" : "22/01/2022"
+  },
+  {
+  "codigo" : 4,
+  "nombre" : "Manzana",
+  "precio" : 0.50,
+  "unidades" : 15,
+  "caducidad" : "22/01/2022"
+  },
+  {
+  "codigo" : 5,
+  "nombre" : "Leche",
+  "precio" : 1,
+  "unidades" : 4,
+  "caducidad" : "21/01/2022"
+  }
+]

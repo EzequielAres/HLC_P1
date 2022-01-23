@@ -1,0 +1,37 @@
+[
+  {
+    "codigo" : 1,
+    "nombre" : "Atún enlatado",
+    "precio" : 3,
+    "unidades" : 10,
+    "descuento" : 25
+  },
+  {
+    "codigo" : 2,
+    "nombre" : "Azúcar",
+    "precio" : 1.5,
+    "unidades" : 2,
+    "descuento" : 10
+  },
+  {
+    "codigo" : 3,
+    "nombre" : "Café",
+    "precio" : 2.33,
+    "unidades" : 7,
+    "descuento" : 0
+  },
+  {
+    "codigo" : 4,
+    "nombre" : "Miel",
+    "precio" : 4,
+    "unidades" : 3,
+    "desucneto" : 75
+  },
+  {
+    "codigo" : 5,
+    "nombre" : "Pasta",
+    "precio" : 1.95,
+    "unidades" : 8,
+    "descuento" : 100
+  }
+]
