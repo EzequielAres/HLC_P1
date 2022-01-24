@@ -44,6 +44,6 @@ public class ProductoPerecedero extends Producto {
 
     @Override
     public String toString() {
-        return super.getCodigo() + ", " + super.getNombre() + ", " + this.calcularPrecio();
+        return super.getCodigo() + ", " + super.getNombre() + ", " + this.calcularPrecio() + ", " + this.getUnidades();
     }
 }

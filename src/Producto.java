@@ -48,7 +48,7 @@ public abstract class Producto {
     }
 
     public boolean comprobarCantidad(int cantidad) {
-        if (this.getUnidades() + cantidad < 0) {
+        if (this.getUnidades() - cantidad < 0) {
             return false;
         } else {
             return true;
