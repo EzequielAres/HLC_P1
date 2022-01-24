@@ -1,3 +1,9 @@
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -40,7 +46,20 @@ public class Main {
         }
     }
 
-    public static void main (String[] args) {
+    public static void main (String[] args) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.USE_JAVA_ARRAY_FOR_JSON_ARRAY, true);
+
+        File archivoPerecederos = new File("src/perecederos.json");
+        //List<ProductoPerecedero> perecederos = mapper.reader().forType(new TypeReference<List<ProductoPerecedero>>() {}).readValue(archivo);
+
+        ProductoPerecedero[] perecederos = mapper.readValue(archivoPerecederos, ProductoPerecedero[].class);
+
+        File archivoImperecederos = new File("src/imperecederos.json");
+        //List<ProductoPerecedero> perecederos = mapper.reader().forType(new TypeReference<List<ProductoPerecedero>>() {}).readValue(archivo);
+
+        ProductoImperecedero[] imperecederos = mapper.readValue(archivoImperecederos, ProductoImperecedero[].class);
+
         menuPrincipal();
     }
 }

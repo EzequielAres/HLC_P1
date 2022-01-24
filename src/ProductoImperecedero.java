@@ -1,7 +1,12 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class ProductoImperecedero extends Producto {
     int descuento;
 
-    public ProductoImperecedero(int codigo, String nombre, float precio, int unidades, int descuento) {
+    @JsonCreator
+    public ProductoImperecedero(@JsonProperty("codigo") int codigo, @JsonProperty("nombre") String nombre, @JsonProperty("precio") float precio,
+                                @JsonProperty("unidades") int unidades, @JsonProperty("descuento") int descuento) {
         super(codigo, nombre, precio, unidades);
         this.descuento = descuento;
     }

@@ -25,7 +25,7 @@
     "nombre" : "Miel",
     "precio" : 4,
     "unidades" : 3,
-    "desucneto" : 75
+    "descuento" : 75
   },
   {
     "codigo" : 5,
